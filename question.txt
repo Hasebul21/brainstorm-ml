@@ -1,0 +1,6 @@
+1. Assumption of linear regression
+2. Dummy variable trap in regression model #
+3. statistical significance #
+4. backward elimination
+5. forward selection
+6. bidrectional elimination

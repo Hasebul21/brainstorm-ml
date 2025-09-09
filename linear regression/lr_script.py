@@ -11,9 +11,8 @@ experience = dataset.iloc[:, :-1].values
 salary = dataset.iloc[:, -1].values
 
 #split dataset into training set and test set
-
 from sklearn.model_selection import train_test_split
-experience_train, experience_test, salary_train, salary_test = train_test_split(experience, salary, test_size=0.2, random_state=0)
+experience_train, experience_test, salary_train, salary_test = train_test_split(experience, salary, test_size=0.2, random_state=2)
 
 # Trainning simple linear regression model
 from sklearn.linear_model import LinearRegression
@@ -39,4 +38,6 @@ ppl.xlabel("Years of Experience")
 ppl.ylabel("Salary")
 ppl.show()
 
-print(regressor.predict([[12]]))
+print(regressor.predict([[9.6]]))
+print(regressor.coef_)
+print(regressor.intercept_)
